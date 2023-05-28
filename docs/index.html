@@ -13,46 +13,52 @@ get_includes('banner');
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 
 	<!-- <title><?php //echo get_bloginfo('name');?>CompanyName</title> -->
     <title>Kema Health Services</title>
 
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/hamburgers.min.css">
-	<link rel="stylesheet" href="css/media.min.css">
+	<link rel="stylesheet" href="media.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">	
 	<link rel="stylesheet" href="css/rslides.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/skitter.styles.min.css" type="text/css" media="all"  />
 	<link rel="stylesheet" href="css/animate.min.css">
 
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!--?php wp_head(); ?-->
 </head>
 <body>
 <!-- Header -->
 	<header>
         <div class="wrapper">
-	<div class="head_info">
-				<div class="header_info">
-					<h2>Phone number:<span><mark>123-456-7890</mark></span></h2>
-				</div>
                 <div class="header_con">
-                    <div class="main_logo">
-                      <!-- <a href="//<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a> -->
-                       <a href="//<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>                    
-                    </div>
+
+					<div class="main_logo">
+						<!-- <a href="//<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a> -->
+						 <a href="//<?php //echo get_home_url(); ?>"><figure><img src="file:///D:/Landing%20page/Landing%20page%20conversion/images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>                    
+					  </div>
+						<div class="head_info">
+				<div class="header_info">
+					<h2>Phone Number:<span><mark>123-456-7890</mark></span></h2>
+				</div>
+                  
                     <div class="contact_info">
-                       <span>Email Address: <mark><a href="mailtonniyomugabo@yahoo.com">infosample@gmail.com</a></mark></span></div>
+                       <span>Email Address: <mark><a href="mailtonniyomugabo@yahoo.com">Info@samplemail.com</a></mark></span></div>
                        </div>
+					   </div>
+					 
 </header>
 <!-- Banner -->
-
+<banner>
 <div id="banner">
     <figure><img src="images/banner-img.jpg" alt="a man whos love remain unfinish"/></figure>
 	<div class="wrapper">
 		<div class="bnr_con">
             <div class="bnr_info">
-				<h2>Unravel Your Best Self Without <span>Going Far From Your Home</span></h2>
+				<h2>Unravel Your Best Self Without <span>Going Far From Your Home!</span></h2>
 				<p>Discover how our behavioral telehealth services allow your recovery to happen anywhere</p>
 				
 			</div>
@@ -82,34 +88,33 @@ get_includes('banner');
 				<!-- <?php dynamic_sidebar('btm4_form'); ?> -->
 				</section>
 				<!-- <?php echo $prompt_message; ?> -->
-				<form method="post"  class="middle_form_slide-right" id="submit_formmessage" action="#bottom4">
+				<form method="post" class="middle_form_slide-right" id="submit_formmessage" action="#bottom4">
 					<div id="invalid-msg"></div>
-
-                    <label for="author">Full Name *<span class="required"></span></label>
-                    <input type="text" class="form_fullname" name="Full_Name" value="" placeholder="" required></label>
-
-                    <label for="author">Address *<span class="required"></span></label>
-                    <input type="email" class="form_email" name="Address" value="" placeholder="" required>
-                   
-                    <label for="author">Email Address *<span class="required"></span></label>
-       				<input type="email" class="form_email" name="Email_Address" value="" placeholder="" required>
-
-                    <label for="author">Phone Number *<span class="required"></span></label>
-                    <input type="tel" name="Phone_Number" placeholder="" required>
-
-
-                    <label for="author">Choose Date*<span class="required"></span></label>
-                    <input type="date" name="Date" required>
-
-                    <label for="author">Choose Time*<span class="required"></span></label>
-                    <input type="time" name="Time" required>
-          
-
-
-       			
-					<div class="captcha-box"><div class="g-recaptcha" data-sitekey="<?php echo $recaptcha_sitekey; ?>"></div></div>
-					<input class="form_btn" type="submit" name="submit_info" value="Submit">
-				</form>     
+				
+					<div class="flex-container">
+						<label for="author" class="required-label">Full Name</label>
+						<input type="text" class="form_fullname" name="Full_Name" value="" placeholder="" required>
+				
+						<label for="author" class="required-label">Address</label>
+						<input type="email" class="form_email" name="Address" value="" placeholder="" required>
+					</div>
+				
+					<div class="grid-container">
+						<label for="author" class="required-label">Email Address</label>
+						<input type="email" class="form_email" name="Email_Address" value="" placeholder="" required>
+										
+						<label for="author" class="required-label">Choose Date</label>
+						<input type="date" name="Date" required>
+										
+						<label for="author" class="required-label">Phone Number</label>
+						<input type="tel" name="Phone_Number" placeholder="" required>											
+						
+						<label for="author" class="required-label">Choose Time</label>
+						<input type="time" name="Time" required>
+					</div>
+					<div class="captcha-box"><div class="g-recaptcha" data-sitekey="6LclEL8lAAAAAEisstuYX5RoLHq32Q5CbIJR2utS"></div></div>					
+					<input class="form_btn" type="submit" name="submit_info" value="Submit &raquo;">
+				</form>
 				</div>
 	
 		<div class="sidebar">
